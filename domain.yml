@@ -1,0 +1,443 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - thankyou
+  - bot_challenge
+  - ask_ability
+  - praise
+  - ask_school_administrators
+  - ask_school_premises
+  - ask_learning_time
+  - ask_organizational_form
+  - ask_credits
+  - ask_plan_education
+  - ask_admission_procedures
+  - ask_admission_records
+  - ask_colleges
+  - ask_tuition_bank
+  - ask_late_tuition
+  - ask_parttime_job
+  - ask_vhub
+  - ask_subject_register
+  - ask_english_score
+  - ask_english_competency
+  - ask_english_contest
+  - ask_type_education
+  - ask_standard_program
+  - ask_special_program
+  - ask_results_study
+  - ask_education_program
+  - ask_compulsory_credits
+  - ask_address
+  - ask_fee_policy
+  - ask_fee_one_credit
+  - ask_subject
+  - ask_course_assessment
+  - ask_get_subject
+  - ask_average_score_formula
+  - ask_point_exchange
+  - ask_graduation_conditions
+  - ask_schedule
+  - ask_scholarship
+  - ask_tuition_support
+  - ask_teaching_assistant
+  - ask_cert
+  - ask_online_learning
+  - ask_academic_advisor
+  - ask_internship
+  - ask_graduation_thesis
+  - ask_club
+  - ask_event
+  - ask_max_credits
+  - ask_maximum_time
+  - ask_postgraduate_program
+  - ask_behavior_score
+  - ask_criteria_behavior_score
+  - ask_low_behavior_score
+  - ask_coercion
+  - ask_results_alert
+  - ask_graduation_grading
+  - ask_contact_information
+  - ask_dean
+  - ask_general_subject
+  - ask_basic_subject
+  - ask_elective_subject
+  - ask_major
+  - ask_data_technology
+  - ask_software_technology
+  - ask_network_security
+  - ask_information_system
+  - ask_data_subject
+  - ask_software_subject
+  - ask_network_subject
+  - ask_system_subject
+  - out_of_scope
+
+
+entities:
+  - premises
+  - school_name
+  - faculty_name
+  - time
+  - vhub
+  - level
+  - data_major
+  - software_major
+  - network_major
+  - system_major
+
+synonyms:
+  - syn_shool
+  - syn_faculty
+  - syn_data
+  - syn_software
+  - syn_network
+  - syn_system
+
+responses:
+  utter_greet:
+    - text: "Xin chào, rất vui được gặp bạn 😘. Bạn cần mình hỗ trợ gì nào?"
+  utter_goodbye:
+    - text: "Chào thân ái và quyết thắng !!! 👋 👋 👋"
+      image: "https://i.imgur.com/qHsERoH.jpeg"
+  utter_thankyou:
+    - text: "Rất hân hạnh được phục vụ bạn. Bạn có cần mình giúp gì thêm nữa không? 😄"
+  utter_bot_challenge:
+    - text: "Mình là Bot Nhà Làm 👾 - một sản phẩm của Khối Liên minh Thịnh vượng Đức Ý, thuộc khoa CNTT trường Đại học Văn Lang"
+  utter_ask_ability:
+    - text: "Hmmmmmm... Mình hoàn toàn có thể giúp bạn giải đáp một số thắc mắc về khoa CNTT của trường. \nNgoài ra mình còn đẹp trai, thông minh, thanh lịch vô địch khắp vũ trụ nữa 😆 😆 😆"
+  utter_praise:
+    - text: "Ahihi, bạn khen quá lời rồi 😊 😊 😊"
+  utter_ask_school_administrators:
+    - text: "Mời bạn truy cập [link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EW77G61d_rtJlGGb74A-9TUBsD5Itr8R3eYll4TbUusi_w?e=vE6O5l) để biết thông tin Ban giám hiệu của trường Đại học Văn Lang"
+  utter_ask_school_premises:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/Refx3Rm.jpeg"
+  utter_ask_learning_time:
+    - text: "Thời gian đào tạo từ 3,5 năm đến 5 nằm tùy vào ngành học. Riêng với ngành Công nghệ thông tin, thời gian đào tạo là 4 năm."
+  utter_ask_organizational_form:
+    - text: "Trường Đại học Văn Lang 🏬 tổ chức chương trình đào tạo theo hệ 
+            thống tín chỉ. Sinh viên được chủ động đăng ký học phần vào đầu học 
+            kỳ tại Cổng thông tin đào tạo http://online.vlu.edu.vn. Riêng học kỳ 1 
+            năm nhất, sinh viên học theo thời khóa biểu do Trường sắp xếp.\n
+            Luật và quy chế về đào tạo theo học chế tín chỉ, bao gồm: các học 
+            kỳ, giờ học, thời gian và kế hoạch đào tạo, các học phần, kiểm tra và thi 
+            học phần, thi tốt nghiệp và công nhận tốt nghiệp, các trường hợp bảo 
+            lưu kết quả, đình chỉ học, xử lý vi phạm… được cung cấp thông tin đầy 
+            đủ trong Sổ tay học tập do Phòng Đào tạo Trường Đại học Văn Lang 
+            biên soạn cho sinh viên năm nhất."
+  utter_ask_credits:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/xKwx4ov.jpeg"
+  utter_ask_plan_education:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/dhkzvNb.jpeg"
+  utter_ask_admission_procedures:
+    - text: "Mời bạn ghé đường dẫn bên dưới để nắm rõ quy trình làm thủ tục nhập học:\n
+            https://www.vanlanguni.edu.vn/tin-tuc-size-bar/2906-huong-dan-lam-thu-tuc-nhap-hoc-dot-1-nam-2021-cho-tan-sinh-vien-khoa-27-dai-hoc-van-lang"
+  utter_ask_admission_records:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/GFGNYWb.jpeg"
+  utter_ask_colleges:
+    - text: "Mời bạn tham khảo tại đây:\nhttps://congnghethongtin.vanlangsaigon.edu.vn/"
+  utter_ask_tuition_bank:
+    - text: "Sinh viên đóng học phí bằng cách truy cập vào trang https://e-bills.vn/pay/vlu và đóng học phí theo hướng dẫn.\n
+            Hoặc nộp tiền mặt, hoặc chuyển khoản từ tất cả các ngân hàng dến tài khoản của Nhà trường theo thông tin sau:\n
+            - Tên tài khoản 📱: TRƯỜNG ĐẠI HỌC VĂN LANG\n
+            - Số tài khoản 💳: VL + [Mã sinh viên] \n
+            - Ngân hàng thụ hưởng 💸: Ngân hàng Shinhan Việt Nam - Chi nhánh Hồ Chí Minh\n
+            - Nội dung chuyển khoản 📃: <Mã sinh viên>, <tên sinh viên>"
+  utter_ask_late_tuition:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/mTl7RC4.jpeg"
+  utter_ask_parttime_job:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/ZoFlzcM.jpeg"
+  utter_ask_vhub:
+    - text: "Mời bạn đến trực tiếp Bộ phận một cửa (Hub):\n
+            - Cơ sở 1: Tầng trệt, 45 Nguyễn Khắc Nhu, phường Cô Giang, quận 1, TP.HCM\n
+            - Cơ sở chính: Tầng trệt, tòa nhà LV, 69/68 Đặng Thùy Trâm, P.13, quận Bình Thạnh. TP.HCM.\n
+            hoặc tại địa chỉ trực tuyến: https://vhub.vanlanguni.edu.vn/"
+  utter_ask_subject_register:
+    - text: "Trước mỗi học kỳ 4 tuần, sinh viên thực hiện đăng ký môn học trên hệ thống. Việc đăng ký 
+            môn học là yêu cầu bắt buộc đối với mỗi sinh viên, nếu không đăng ký, xem như từ chối học tập.\n
+            Khối lượng đăng ký trong 1 học kỳ, tối thiểu: 14 tín chỉ, tối đa: 20 tín chỉ.
+            \nMời bạn truy cập https://online.vlu.edu.vn/ ,sau đó vào mục Đăng ký học phần để tiến hành đăng ký tín chỉ theo 
+            thời gian quy định được gửi về mail sinh viên mỗi đầu học kỳ."
+  utter_ask_english_score:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/Y1ajeEK.jpeg"
+  utter_ask_english_competency:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/nMxw6p6.jpeg"
+  utter_ask_english_contest:
+    - text: "Trung tâm Khảo thí Tiếng Anh là trung tâm trực thuộc Trường Đại học Văn Lang và được Hội đồng Quản trị Trường ra quyết định thành lập theo Quyết định số 10/QĐ/VL-HĐQT ngày 13/01/2020. 
+            Trung tâm Khảo thí Tiếng Anh có chức năng chính là tổ chức kỳ thi đánh giá năng lực tiếng Anh theo khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam.\n
+            Thông tin liên hệ trung tâm khảo thí tiếng anh:\n
+            - Địa Chỉ: Phòng 2.01, Số 45 Nguyễn Khắc Nhu, Phường Cô Giang, Quận 1, Tp. Hồ Chí Minh\n
+            - Điện Thoại: (028) 71 099 267\n
+            - Fax: (028) 38 369 716\n
+            - Email: khaothitienganh@vanlanguni.edu.vn\n
+            - Website: http://khaothitienganh.vanlanguni.vn"
+  utter_ask_type_education:
+    - text: "Sinh viên có 02 lựa chọn khi học ngành Công nghệ Thông tin tại Văn Lang:"
+      buttons:
+      - title: "1. Chương trình tiêu chuẩn"
+        payload: "ask_standard_program"
+      - title: "2. Chương trình đào tạo đặc biệt"
+        payload: "ask_special_program" 
+  utter_ask_standard_program:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/hnP3JoK.jpeg"
+  utter_ask_special_program:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/iYHvEIy.jpeg"
+  utter_ask_results_study:
+    - text: "Mời bạn truy cập trang https://online.vlu.edu.vn/ \n
+            Sau khi đăng nhập thành công, bạn vào mục Kết quả học tập để xem chi tiết điểm và cách đánh giá cho điểm của từng môn học trong mỗi học kỳ."
+  utter_ask_education_program:
+    - text: "Mời bạn truy cập trang https://online.vlu.edu.vn/ \n
+            Sau khi đăng nhập thành công, bạn vào mục Chương trình đào tạo để xem chi tiết chương trình giảng dạy mà khoa CNTT thiết kế trong 4 năm học."
+  utter_ask_compulsory_credits:
+    - text: "Với khóa K26:"
+      image: "https://i.imgur.com/TrMpnkA.jpeg"
+  utter_ask_address:
+    - text: "Khoa CNTT nằm tại Cơ sở chính: Tầng 5 Tòa nhà hành chính L-V, 69/68 Đặng Thùy Trâm, P.13, quận Bình Thạnh. TP.HCM"
+  utter_ask_fee_policy:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/UlRQqnn.jpeg"
+  utter_ask_fee_one_credit:
+    - text: "Tính đến khóa K27, giá 1 đơn vị tín chỉ dao động từ 1,150,000 đến 1,610,000"
+  utter_ask_subject:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/Q80IjZa.jpeg"
+  utter_ask_course_assessment:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/hwY4h5E.jpeg"
+  utter_ask_get_subject:
+    - text: "Điều kiện:\n
+            - Tham gia lớp học trên 80% tổng số buổi\n
+            - Điểm trung bình từ 4.5 (thang 10) hoặc 1 (loại D - thang 4)\n
+            - Với các môn chuyên ngành: Điểm trung bình phải từ 5.5 (thang 10) hoặc 2 (loại C - thang 4)"
+  utter_ask_average_score_formula:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/D9iAOBV.jpeg"
+  utter_ask_point_exchange:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/M3VA58o.jpeg"
+  utter_ask_graduation_conditions:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/QvOQinO.jpeg"
+  utter_ask_schedule:
+    - text: "Mời bạn truy cập trang https://online.vlu.edu.vn/ \n
+            Sau khi đăng nhập thành công, bạn vào mục Lịch học để xem chi tiết thời khóa biểu cá nhân"
+  utter_ask_scholarship:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/0TvF04v.jpeg"
+  utter_ask_tuition_support:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/Nf9MG6J.jpeg"
+  utter_ask_teaching_assistant:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/x9i8O6d.jpeg"
+  utter_ask_cert:
+    - text: "Văn bằng đào tạo của Khoa CNTT là Cử nhân Công nghệ Thông tin 🎓."
+  utter_ask_online_learning:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/wDERjxr.jpeg"
+  utter_ask_academic_advisor:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/OljWhTZ.jpeg"
+  utter_ask_internship:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/MldxASD.jpeg"
+  utter_ask_graduation_thesis:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/NogAIJW.jpeg"
+  utter_ask_club:
+    - text: "Câu lạc bộ học thuật của khoa là Văn Lang Tech Club https://www.facebook.com/vlutech"
+  utter_ask_event:
+    - text: "ITSM là sự kiện thường niên với sự kết hợp của 3 khoa Công Nghệ Sinh Học và Môi Trường, Công Nghệ Thông Tin, Nhiệt Lạnh.
+            Đến với sự kiện bạn sẽ có cơ hội được quẩy bung sức, bên cạnh đó cũng là dịp để gắn kết tình bạn, kết giao thêm bạn mới. \n
+            Bạn có thể tìm thêm các event khác tại đây 📌:\nhttps://sukien.vanlanguni.edu.vn/events.php"
+  utter_ask_max_credits:
+    - text: "Khối lượng đăng ký trong 1 học kỳ, tối thiểu: 14 tín chỉ, tối đa: 20 tín chỉ."
+  utter_ask_maximum_time:
+    - text: "Thời gian đào tạo tối đa để sinh viên hoàn thành chương trình là không vượt quá 2 (hai) lần thời gian được thiết kế cho 
+            chương trình đào tạo của ngành. Nếu có học kỳ sinh viên gián đoạn nghỉ học vì lý do cá nhân hoặc thời gian sinh viên đã 
+            học ở trường khác (đối với sinh viên chuyển trường) đều được tính vào thời gian này."
+  utter_ask_postgraduate_program:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/huRNao9.jpeg"
+  utter_ask_behavior_score:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/981PjYU.jpeg"
+  utter_ask_criteria_behavior_score:
+    - text: "Mời bạn truy cập trang https://online.vlu.edu.vn/\nSau khi đăng nhập thành công, 
+            bạn vào mục Đánh giá điểm rèn luyện để xem chi tiết các tiêu chí đánh giá, cũng như tự chấm điểm rèn luyện cá nhân theo từng học kì"
+  utter_ask_low_behavior_score:
+    - text: "Người học bị xếp loại rèn luyện yếu, kém trong hai học kỳ liên tiếp thì phải tạm ngừng học ít nhất một học kỳ ở học kỳ tiếp theo. 
+            Nếu bị xếp loại rèn luyện yếu, kém cả hai học kỳ liên tiếp lần thứ hai thì sẽ bị buộc thôi học."
+  utter_ask_coercion:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/QzICmiM.jpeg"
+  utter_ask_results_alert:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/LVHDiHa.jpeg"
+  utter_ask_graduation_grading:
+    - text: "Mời bạn tham khảo hình dưới để biết thêm chi tiết 📌:"
+      image: "https://i.imgur.com/COAcu9O.jpeg"
+  utter_ask_contact_information:
+    - text: "Thông tin liên hệ khoa Công nghệ thông tin 📌:\n
+            - Trưởng khoa: TS. Hoàng Lê Minh\n
+            - Phó Trưởng khoa: ThS. Bùi Minh Phụng\n
+            - Văn phòng: Cơ sở chính, Tầng 5 Tòa nhà hành chính L-V, 69/68 Đặng Thùy Trâm, Phường 13, Quận Bình Thạnh, Tp. HCM\n
+            - Điện thoại: 028. 71099240 - ext: 4010 (CTSV), 4111 (Ban lãnh đạo Khoa)\n
+            - Email: k.cntt@vanlanguni.edu.vn\n
+            - Website: http://cntt.vanlanguni.edu.vn"
+  utter_ask_dean:
+    - text: "Trưởng khoa 👏: TS. Hoàng Lê Minh"
+      image: "https://i.imgur.com/ydkxdV1.jpeg"
+  utter_ask_general_subject:
+    - text: "Kiến thức đại cương 📖 là tri thức tiền đề tạo nền tảng ban đầu, là cơ sở cho sinh viên tiếp cận hệ thống kiến thức cơ sở và kiến thức chuyên ngành.\n
+            Để biết rõ hơn về các môn thuộc nhóm Kiến thức đại cương, bạn vui lòng tham thảo tại đường link 📌: [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 1. Kiến thức Đại cương"
+  utter_ask_basic_subject:
+    - text: "Kiến thức cơ sở ngành 📖 là những kiến thức chung nhất của ngành CNTT, các kiến thức này cơ bản và mang đến các kiến thức cơ sở cho quá trình học và chọn chuyên ngành của bạn sau này.\n
+            Để biết rõ hơn về các môn thuộc nhóm Kiến thức đại cương, bạn vui lòng tham thảo tại đường link 📌: [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.1. Kiến thức Cơ sở ngành"  
+  utter_ask_elective_subject:
+    - text: "Môn tự chọn chuyên ngành 📖 là các môn học sinh viên được quyền lựa chọn để hoàn thành đủ số tín chỉ bắt buộc của chuyên ngành ngoài các mốn bắt buộc chuyên ngành.\n
+            Để biết rõ hơn về các môn thuộc nhóm Kiến thức đại cương, bạn vui lòng tham thảo tại đường link 📌: [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.2 đến 2.5 để biết môn tự chọn của từng chuyên ngành."
+  utter_ask_major:
+    - text: "Khoa CNTT có 4 chuyên ngành chính: Công nghệ Phần mềm, Công nghệ Dữ liệu, An ninh mạng & IoT và Tin học Quản trị. Bạn có cần mình tư vấn về chuyên ngành nào hay không 😘? (chọn 1 lựa chọn) "    
+      buttons:
+      - title: "Công nghệ dữ liệu"
+        payload: "ask_data_technology"
+      - title: "Công nghệ phần mềm"
+        payload: "ask_software_technology" 
+      - title: "An ninh mạng & IoT"
+        payload: "ask_network_security"
+      - title: "Tin học quản trị"
+        payload: "ask_information_system"           
+  utter_ask_data_technology:
+    - image: "https://i.imgur.com/e6Kp90B.jpeg"
+      text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành Công nghệ Dữ liệu được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.3. Chuyên ngành Công nghệ Dữ liệu \n
+            🚨 Lưu ý: Sinh viên cần hoàn thành Khóa luận tốt nghiệp mới được xét tốt nghiệp với chuyên ngành Công nghệ Dữ liệu" 
+  utter_ask_software_technology:
+    - image: "https://i.imgur.com/CWIqmYj.jpeg"
+      text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành Công nghệ Phần mềm được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.2. Chuyên ngành Công nghệ Phần mềm \n
+            🚨 Lưu ý: Sinh viên cần hoàn thành Khóa luận tốt nghiệp mới được xét tốt nghiệp với chuyên ngành Công nghệ Phần mềm"
+  utter_ask_network_security:
+    - image: "https://i.imgur.com/xlGUV1R.jpeg"
+      text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành An ninh mạng & IoT được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.4. Chuyên ngành An ninh mạng & IoT \n
+            🚨 Lưu ý: Sinh viên cần hoàn thành Khóa luận tốt nghiệp mới được xét tốt nghiệp với chuyên ngành An ninh mạng & IoT"
+  utter_ask_information_system:
+    - text: "Tin học quản trị là ngành học chuyên đào tạo ra những kỹ sư quản lý thông tin có trình độ và năng lực trong công tác quản lý và bảo mật thông tin.Sau khi tốt nghiệp chuyên ngành này,
+            sinh viên sẽ được trang bị kiến thức,kỹ năng và trình độ năng lực trong vấn đề quản lý thông tin doanh nghiệp,nhà nước,giáo dục,... 
+            Cử nhân tốt nghiệp sẽ có cơ hội việc làm khá rộng mở đó là làm việc trong các doanh nghiệp tư nhân, các cơ quan nhà nước hay các tổ chức chính phủ,phi chính phủ khác. \n
+            Sau khi học tập và nghiên cứu cơ bản những môn khoa học cơ sở,sinh viên sẽ được hoàn thiện hóa năng lực,học tập cũng như nghiên cứu các
+            môn chuyên ngành có tính chuyên sâu cao độ. Những môn học này thông thường sẽ bao gồm khối các môn tự chọn và các môn bắt buộc. Môn bắt
+            buộc là môn sinh viên phải học theo chương trình đề ra và phải đáp ứng được các yêu cầu trong quá trình học tập đó. Còn môn tự chọn,sinh viên
+            được tự chọn lựa môn học đáp ứng đủ số lượng tín chỉ tự chọn đề ra. \n
+            🚨 Đặc biệt: Sinh viên chỉ cần hoàn thành đúng số tín chỉ yêu cầu là đã có thể ra trường mà không cần làm Khóa luận tốt nghiệp"
+  utter_ask_data_subject:
+    - text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành Công nghệ Dữ liệu được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.3. Chuyên ngành Công nghệ Dữ liệu \n"
+  utter_ask_software_subject:
+    - text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành Công nghệ Phần mềm được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.2. Chuyên ngành Công nghệ Phần mềm \n"
+  utter_ask_network_subject:
+    - text: "Để biết thêm thông tin chi tiết về các môn học của chuyên ngành An ninh mạng & IoT được giảng dạy tại trường ĐH Văn Lang, mời bạn truy cập đường link 📌: \n
+            [documentation link](https://vanlangunivn-my.sharepoint.com/:b:/g/personal/duc_187it23787_vanlanguni_vn/EfaLlo2eXfJNtwk4Dkq7wLoBLMZzIPJPIdUyrNiwdCKwVA?e=GKI4Kp) - mục 2.4. Chuyên ngành An ninh mạng & IoT \n"
+  utter_ask_system_subject:
+    - text: "Sinh viên sẽ học các môn bắt buộc như khung chương trình, các môn tự chọn sẽ tùy ý sinh viên. Trong đó phải đảm bảo đủ số tín chỉ cơ sở ngành."
+  utter_please_rephrase:
+    - text: "Mình chưa hiểu ý bạn lắm. Bạn có thể nói rõ hơn không?"
+  utter_out_of_scope:
+    - text: "Xin lỗi !!! Mình chưa được dạy về vấn về này"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_thankyou
+  - utter_bot_challenge
+  - utter_ask_ability
+  - utter_praise
+  - utter_ask_school_administrators
+  - utter_ask_school_premises
+  - utter_ask_learning_time
+  - utter_ask_organizational_form
+  - utter_ask_credits
+  - utter_ask_plan_education
+  - utter_ask_admission_procedures
+  - utter_ask_admission_records
+  - utter_ask_colleges
+  - utter_ask_tuition_bank
+  - utter_ask_late_tuition
+  - utter_ask_parttime_job
+  - utter_ask_vhub
+  - utter_ask_subject_register
+  - utter_ask_english_score
+  - utter_ask_english_competency
+  - utter_ask_english_contest
+  - utter_ask_type_education
+  - utter_ask_standard_program
+  - utter_ask_special_program
+  - utter_ask_results_study
+  - utter_ask_education_program
+  - utter_ask_compulsory_credits
+  - utter_ask_address
+  - utter_ask_fee_policy
+  - utter_ask_fee_one_credit
+  - utter_ask_subject
+  - utter_ask_course_assessment
+  - utter_ask_get_subject
+  - utter_ask_average_score_formula
+  - utter_ask_point_exchange
+  - utter_ask_graduation_conditions
+  - utter_ask_schedule
+  - utter_ask_scholarship
+  - utter_ask_tuition_support
+  - utter_ask_teaching_assistant
+  - utter_ask_cert
+  - utter_ask_online_learning
+  - utter_ask_academic_advisor
+  - utter_ask_internship
+  - utter_ask_graduation_thesis
+  - utter_ask_club
+  - utter_ask_event
+  - utter_ask_max_credits
+  - utter_ask_maximum_time
+  - utter_ask_postgraduate_program
+  - utter_ask_behavior_score
+  - utter_ask_criteria_behavior_score
+  - utter_ask_low_behavior_score
+  - utter_ask_coercion
+  - utter_ask_results_alert
+  - utter_ask_graduation_grading
+  - utter_ask_contact_information
+  - utter_ask_dean
+  - utter_ask_general_subject
+  - utter_ask_basic_subject
+  - utter_ask_elective_subject
+  - utter_ask_major
+  - utter_ask_data_technology
+  - utter_ask_software_technology
+  - utter_ask_network_security
+  - utter_ask_information_system
+  - utter_ask_data_subject
+  - utter_ask_software_subject
+  - utter_ask_network_subject
+  - utter_ask_system_subject
+  - utter_out_of_scope
+  - utter_please_rephrase
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

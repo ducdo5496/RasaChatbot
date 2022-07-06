@@ -1,0 +1,594 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+version: "3.0"
+
+stories:
+
+## greet
+- story: greet
+  steps:
+  - user: |
+      xin chào
+    intent: greet    
+  - action: utter_greet
+
+## goodbye
+- story: goodbye
+  steps:
+  - user: |
+      tạm biệt
+    intent: goodbye  
+  - action: utter_goodbye      
+
+## thankyou
+- story: thankyou
+  steps:
+  - user: |
+      cảm ơn nhiều nhé
+    intent: thankyou
+  - action: utter_thankyou     
+
+## bot_challenge
+- story: bot_challenge
+  steps:
+  - user: |
+      ai đang trả lời vậy?
+    intent: bot_challenge      
+  - action: utter_bot_challenge
+
+## ask_ability
+- story: ask_ability
+  steps:
+  - user: |
+      bạn làm được những gì?
+    intent: ask_ability
+  - action: utter_ask_ability
+
+## praise
+- story: praise
+  steps:
+  - user: |
+      giỏi đấy!
+    intent: praise
+  - action: utter_praise
+
+## ask_school_administrators
+- story: ask_school_administrators
+  steps:
+  - user: |
+      thành phần ban giám hiệu gồm những ai?
+    intent: ask_school_administrators
+  - action: utter_ask_school_administrators
+
+## ask_school_premises
+- story: ask_school_premises
+  steps:
+  - user: |
+      [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} có mấy cơ sở vậy ạ?
+    intent: ask_school_premises
+  - action: utter_ask_school_premises
+
+## ask_learning_time
+- story: ask_learning_time
+  steps:
+  - user: |
+      [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo đại học trong mấy năm vậy ạ?
+    intent: ask_learning_time
+  - action: utter_ask_learning_time
+
+## ask_organizational_form
+- story: ask_organizational_form
+  steps:
+  - user: |
+      [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo theo niên chế hay tín chỉ vậy ạ?
+    intent: ask_organizational_form
+  - action: utter_ask_organizational_form
+
+## ask_credits
+- story: ask_credits
+  steps:
+  - user: |
+      cho em học theo tín chỉ là sao vậy ạ?
+    intent: ask_credits
+  - action: utter_ask_credits
+
+## ask_plan_education
+- story: ask_plan_education
+  steps:
+  - user: |
+      kế hoạch đào tạo của [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} như thế nào ạ?
+    intent: ask_plan_education
+  - action: utter_ask_plan_education
+
+## ask_admission_procedures
+- story: ask_admission_procedures
+  steps:
+  - user: |
+      cho em hỏi về thủ tục nhập học tại [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} ạ?
+    intent: ask_admission_procedures
+  - action: utter_ask_admission_procedures
+
+## ask_admission_records
+- story: ask_admission_records
+  steps:
+  - user: |
+      hồ sơ nhập học tại [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} gồm những gì vậy ạ?
+    intent: ask_admission_records
+  - action: utter_ask_admission_records
+
+## ask_colleges
+- story: ask_colleges
+  steps:
+  - user: |
+      [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} có tổ chức đào tạo theo hệ cao đẳng không ạ?
+    intent: ask_colleges
+  - action: utter_ask_colleges
+
+## ask_tuition_bank
+- story: ask_tuition_bank
+  steps:
+  - user: |
+      cho em hỏi về cách đóng học phí với ạ?
+    intent: ask_tuition_bank
+  - action: utter_ask_tuition_bank
+
+## ask_late_tuition
+- story: ask_late_tuition
+  steps:
+  - user: |
+      nộp học phí trễ thì có bị sao không ạ?
+    intent: ask_late_tuition
+  - action: utter_ask_late_tuition
+
+## ask_parttime_job
+- story: ask_parttime_job
+  steps:
+  - user: |
+      có việc làm thêm nào trong trường không ạ?
+    intent: ask_parttime_job
+  - action: utter_ask_parttime_job
+
+## ask_vhub
+- story: ask_vhub
+  steps:
+  - user: |
+      em muốn xin [cấp giấy chứng nhận tạm hoãn nghĩa vụ quân sự](vhub) ạ
+    intent: ask_vhub
+  - action: utter_ask_vhub
+
+## ask_subject_register
+- story: ask_subject_register
+  steps:
+  - user: |
+      làm thế nào để đăng ký môn học vậy ạ?
+    intent: ask_subject_register
+  - action: utter_ask_subject_register
+
+## ask_english_score
+- story: ask_english_score
+  steps:
+  - user: |
+      điểm anh văn đầu ra của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu vậy ạ?
+    intent: ask_english_score
+  - action: utter_ask_english_score
+
+## ask_english_competency
+- story: ask_english_competency
+  steps:
+  - user: |
+      cho em hỏi về khung năng lực 6 bậc ạ
+    intent: ask_english_competency
+  - action: utter_ask_english_competency
+
+## ask_english_contest
+- story: ask_english_contest
+  steps:
+  - user: |
+      mình thi tiếng anh đầu ra ở đây vậy ạ?
+    intent: ask_english_contest
+  - action: utter_ask_english_contest
+
+## ask_type_education
+- story: ask_type_education
+  steps:
+  - user: |
+      [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có những chương trình đào tạo nào vậy ạ?
+    intent: ask_type_education
+  - action: utter_ask_type_education
+
+## ask_standard_program
+- story: ask_standard_program
+  steps:
+  - user: |
+      có thể giới thiệu cho em về chương trình tiêu chuẩn được không ạ?
+    intent: ask_standard_program
+  - action: utter_ask_standard_program
+
+## ask_special_program
+- story: ask_special_program
+  steps:
+  - user: |
+      có thể giới thiệu cho em về chương trình đặc biệt được không ạ?
+    intent: ask_special_program
+  - action: utter_ask_special_program
+
+## ask_results_study
+- story: ask_results_study
+  steps:
+  - user: |
+      xem kết quả học tập ở đâu vậy ạ?
+    intent: ask_results_study
+  - action: utter_ask_results_study
+
+## ask_education_program
+- story: ask_education_program
+  steps:
+  - user: |
+      chương trình đào tạo của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} được tổ chức như thế nào vậy ạ?
+    intent: ask_education_program
+  - action: utter_ask_education_program
+
+## ask_compulsory_credits
+- story: ask_compulsory_credits
+  steps:
+  - user: |
+      số tín chỉ cần để ra trường là bao nhiêu ạ?
+    intent: ask_compulsory_credits
+  - action: utter_ask_compulsory_credits
+
+## ask_address
+- story: ask_address
+  steps:
+  - user: |
+      địa chỉ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} ở đâu vậy ạ?
+    intent: ask_address
+  - action: utter_ask_address
+
+## ask_fee_policy
+- story: ask_fee_policy
+  steps:
+  - user: |
+      [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có chính sách về học phí như thế nào vậy ạ?
+    intent: ask_fee_policy
+  - action: utter_ask_fee_policy
+
+## ask_fee_one_credit
+- story: ask_fee_one_credit
+  steps:
+  - user: |
+      cho em hỏi giá 1 tín chỉ hiện nay là bao nhiêu ạ?
+    intent: ask_fee_one_credit
+  - action: utter_ask_fee_one_credit
+
+## ask_subject
+- story: ask_subject
+  steps:
+  - user: |
+      cho em hỏi học phần là gì ạ?
+    intent: ask_subject
+  - action: utter_ask_subject
+
+## ask_course_assessment
+- story: ask_course_assessment
+  steps:
+  - user: |
+      làm sao để đánh giá môn học ạ?
+    intent: ask_course_assessment
+  - action: utter_ask_course_assessment
+
+## ask_get_subject
+- story: ask_get_subject
+  steps:
+  - user: |
+      điều kiện để qua môn là gì ạ?
+    intent: ask_get_subject
+  - action: utter_ask_get_subject
+
+## ask_average_score_formula
+- story: ask_average_score_formula
+  steps:
+  - user: |
+      công thức tính điểm trung bình như thế nào vậy ạ?
+    intent: ask_average_score_formula
+  - action: utter_ask_average_score_formula
+
+## ask_point_exchange
+- story: ask_point_exchange
+  steps:
+  - user: |
+      cách quy đổi điểm học tập của mình
+    intent: ask_point_exchange
+  - action: utter_ask_point_exchange
+
+## ask_graduation_conditions
+- story: ask_graduation_conditions
+  steps:
+  - user: |
+      để tốt nghiệp thì cần những điều kiện gì?
+    intent: ask_graduation_conditions
+  - action: utter_ask_graduation_conditions
+
+## ask_schedule
+- story: ask_schedule
+  steps:
+  - user: |
+      xem thời khóa biểu ở đâu?
+    intent: ask_schedule
+  - action: utter_ask_schedule
+
+## ask_scholarship
+- story: ask_scholarship
+  steps:
+  - user: |
+      các chương trình học bổng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}      
+    intent: ask_scholarship
+  - action: utter_ask_scholarship
+
+## ask_tuition_support
+- story: ask_tuition_support
+  steps:
+  - user: |
+      [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có chính sách hỗ trợ học phí cho sinh viên như thế nào ạ?
+    intent: ask_tuition_support
+  - action: utter_ask_tuition_support
+
+## ask_teaching_assistant
+- story: ask_teaching_assistant
+  steps:
+  - user: |
+      cho em hỏi cách đăng ký làm trợ giảng cho khoa [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} với ạ?
+    intent: ask_teaching_assistant
+  - action: utter_ask_teaching_assistant
+
+## ask_cert
+- story: ask_cert
+  steps:
+  - user: |
+      tốt nghiệp ngành [cntt]{"entity": "faculty_name", "value": "syn_faculty"} với văn bằng gì?
+    intent: ask_cert
+  - action: utter_ask_cert
+
+## ask_online_learning
+- story: ask_online_learning
+  steps:
+  - user: |
+      cách tổ chức học trực tuyến của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    intent: ask_online_learning
+  - action: utter_ask_online_learning
+
+## ask_academic_advisor
+- story: ask_academic_advisor
+  steps:
+  - user: |
+      cố vấn học tập là ai ạ?
+    intent: ask_academic_advisor
+  - action: utter_ask_academic_advisor
+
+## ask_internship
+- story: ask_internship
+  steps:
+  - user: |
+      các chương trình thực tập của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    intent: ask_internship
+  - action: utter_ask_internship
+
+## ask_graduation_thesis
+- story: ask_graduation_thesis
+  steps:
+  - user: |
+      khóa luận tốt nghiệp là gì ạ?
+    intent: ask_graduation_thesis
+  - action: utter_ask_graduation_thesis
+
+## ask_club
+- story: ask_club
+  steps:
+  - user: |
+      [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có câu lạc bộ nào không?
+    intent: ask_club
+  - action: utter_ask_club
+
+## ask_event
+- story: ask_event
+  steps:
+  - user: |
+      [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các sự kiện hằng năm nào?
+    intent: ask_event
+  - action: utter_ask_event
+
+## ask_max_credits
+- story: ask_max_credits
+  steps:
+  - user: |
+      trong một học kỳ em có thể đăng ký tối đa bao nhiêu tín chỉ ạ?
+    intent: ask_max_credits
+  - action: utter_ask_max_credits
+
+## ask_maximum_time
+- story: ask_maximum_time
+  steps:
+  - user: |
+      học quá mấy năm thì bị trường đuổi ạ?
+    intent: ask_maximum_time
+  - action: utter_ask_maximum_time
+
+## ask_postgraduate_program
+- story: ask_postgraduate_program
+  steps:
+  - user: |
+      các chương trình sau đại học của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    intent: ask_postgraduate_program
+  - action: utter_ask_postgraduate_program
+
+## ask_behavior_score
+- story: ask_behavior_score
+  steps:
+  - user: |
+      cho em hỏi về cách phân loại điểm rèn luyện ạ?
+    intent: ask_behavior_score
+  - action: utter_ask_behavior_score
+
+## ask_criteria_behavior_score
+- story: ask_criteria_behavior_score
+  steps:
+  - user: |
+      cho em hỏi về những tiêu chí nào để đánh giá điểm rèn luyện?
+    intent: ask_criteria_behavior_score
+  - action: utter_ask_criteria_behavior_score
+
+## ask_low_behavior_score
+- story: ask_low_behavior_score
+  steps:
+  - user: |
+      điểm rèn luyện yếu thì bị gì ạ?
+    intent: ask_low_behavior_score
+  - action: utter_ask_low_behavior_score
+
+## ask_coercion
+- story: ask_coercion
+  steps:
+  - user: |
+      tại sao bị buộc thôi học ạ?
+    intent: ask_coercion
+  - action: utter_ask_coercion
+
+## ask_results_alert
+- story: ask_results_alert
+  steps:
+  - user: |
+      cảnh báo học tập là gì ạ?
+    intent: ask_results_alert
+  - action: utter_ask_results_alert
+
+## ask_graduation_grading
+- story: ask_graduation_grading
+  steps:
+  - user: |
+      cho em hỏi về thang điểm xếp loại tốt nghiệp với ạ?
+    intent: ask_graduation_grading
+  - action: utter_ask_graduation_grading
+
+## ask_contact_information
+- story: ask_contact_information
+  steps:
+  - user: |
+      cho em hỏi về thông tin liên hệ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} với ạ?
+    intent: ask_contact_information
+  - action: utter_ask_contact_information
+
+## ask_dean
+- story: ask_dean
+  steps:
+  - user: |
+      trưởng khoa hiện tại của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là ai vậy ạ?
+    intent: ask_dean
+  - action: utter_ask_dean
+
+## ask_general_subject
+- story: ask_general_subject
+  steps:
+  - user: |
+      môn học đại cương là gì ạ?
+    intent: ask_general_subject
+  - action: utter_ask_general_subject
+
+## ask_basic_subject
+- story: ask_basic_subject
+  steps:
+  - user: |
+      môn học cơ sở ngành là gì ạ?
+    intent: ask_basic_subject
+  - action: utter_ask_basic_subject
+
+## ask_elective_subject
+- story: ask_elective_subject
+  steps:
+  - user: |
+      môn tự chọn chuyên ngành là gì ạ?
+    intent: ask_elective_subject
+  - action: utter_ask_elective_subject
+
+## ask_major
+- story: ask_major
+  steps:
+  - user: |
+      các chuyên ngành đang đào tạo của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là những chuyên ngành nào ạ?
+    intent: ask_major
+  - action: utter_ask_major
+
+## ask_data_technology
+- story: ask_data_technology
+  steps:
+  - user: |
+      tư vấn cho em về chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} với ạ
+    intent: ask_data_technology
+  - action: utter_ask_data_technology
+
+## ask_software_technology
+- story: ask_software_technology
+  steps:
+  - user: |
+      tư vấn cho em về chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} với ạ
+    intent: ask_software_technology
+  - action: utter_ask_software_technology
+
+## ask_network_security
+- story: ask_network_security
+  steps:
+  - user: |
+      tư vấn cho em về chuyên ngành [an ninh mạng và iot]{"entity": "network_major", "value": "syn_network"} với ạ
+    intent: ask_network_security
+  - action: utter_ask_network_security
+
+## ask_information_system
+- story: ask_information_system
+  steps:
+  - user: |
+      em muốn hỏi về chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} ạ
+    intent: ask_information_system
+  - action: utter_ask_information_system
+
+## ask_data_subject
+- story: ask_data_subject
+  steps:
+  - user: |
+      cho em hỏi các môn học bắt buộc chuyên ngành của ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}
+    intent: ask_data_subject
+  - action: utter_ask_data_subject
+
+## ask_software_subject
+- story: ask_software_subject
+  steps:
+  - user: |
+      cho em hỏi các môn học bắt buộc chuyên ngành của ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}
+    intent: ask_software_subject
+  - action: utter_ask_software_subject
+
+## ask_network_subject
+- story: ask_network_subject
+  steps:
+  - user: |
+      cho em hỏi các môn học bắt buộc chuyên ngành của ngành [an ninh mạng và iot]{"entity": "network_major", "value": "syn_network"}
+    intent: ask_network_subject
+  - action: utter_ask_network_subject
+
+## ask_system_subject
+- story: ask_system_subject
+  steps:
+  - user: |
+      cho em hỏi các môn học bắt buộc chuyên ngành của ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}
+    intent: ask_system_subject
+  - action: utter_ask_system_subject
+
+## out_of_scope  
+- story: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  
+## nlu_fallback
+- story: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

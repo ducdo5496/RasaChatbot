@@ -1,0 +1,1051 @@
+version: "3.0"
+
+nlu:
+
+- synonym: syn_shool
+  examples: |
+    - trường
+    - Văn Lang
+    - đại học
+    - trường Đại học Văn Lang
+    - trường mình
+    - daihocvanlang
+    - dhvlang
+    - van lang
+    - dhvl
+    - vl
+
+- synonym: syn_faculty
+  examples: |
+    - công nghệ thông tin
+    - khoa
+    - khoa Công nghệ thông tin
+    - khoa mình
+    - khoa của mình
+    - congnghethongtin
+    - khoa cntt
+    - cntt
+    
+
+- synonym: syn_data
+  examples: |
+    - Công nghệ dữ liệu
+    - dữ liệu
+    - khoa học dữ liệu
+    - khdl
+    - cndulieu
+    - congnghedulieu
+    - dulieu
+    - khoahocdulieu
+    - cndl
+
+- synonym: syn_software
+  examples: |
+    - kỹ thuật phần mềm
+    - Công nghệ phần mềm
+    - phần mềm
+    - congnghephanmem
+    - cong nghe phan mem
+    - cnphanmem
+    - cnpm
+
+- synonym: syn_network
+  examples: |
+    - An ning mạng
+    - anninhmang
+    - an ninh
+    - mạng
+    - anmang
+    - anm
+    - iot
+    - mạng kết nối vạn vật
+    - an ninh mạng và iot
+
+- synonym: syn_system
+  examples: |
+    - Tin học quản trị
+    - tin học
+    - hệ thống quản trị
+    - quản trị hệ thống
+    - qtht
+    - htqt
+    - tinhocquantri
+    - hethongquantri
+    - thqt
+    - quản trị tin học
+
+
+- lookup: vhub
+  examples: |
+    - Cấp Giấy Xác nhận kết quả học tập GDQP
+    - Chuyển trường đến
+    - Chuyển trường đi
+    - Nghỉ học tạm thời (HẾT HẠN HK213)
+    - Nhập học lại (Hết hạn)
+    - Thôi học - Rút hồ sơ (Hết hạn hủy môn)
+    - Chuyển ngành
+    - Chuyển điểm, miễn học phần
+    - Cấp bảng điểm
+    - Cấp Giấy Xác nhận kết quả học tập GDQP (K24 về trước)
+    - Cấp Giấy xác nhận nội dung ĐCCT
+    - Cấp Giấy xác nhận hoàn thành CTĐT
+    - Cấp Giấy chứng nhận tốt nghiệp tạm thời
+    - Cấp bản mô tả CTĐT
+    - Cấp Giấy xác nhận thời gian học tập
+    - Cấp bản sao bằng tốt nghiệp từ sổ gốc
+    - Xác minh văn bằng, chứng chỉ
+    - Cấp Giấy giới thiệu để đi thực tập
+    - Cấp giấy bổ sung hồ sơ - xác nhận đang học tại Trường
+    - Cấp giấy chứng nhận tạm hoãn thi hành nghĩa vụ quân sự
+    - Cấp giấy xác nhận để giảm trừ gia cảnh
+    - Cấp giấy xác nhận xin cấp Visa
+    - Cập nhật thông tin sinh viên
+    - Cấp lại thẻ sinh viên
+    - Cấp xác nhận vay vốn sinh viên tại địa phương
+    - Cấp xác nhận ưu đãi giáo dục tại địa phương
+    - Cấp xác nhận sinh viên để xác minh kỷ luật
+    - Cấp xác nhận sinh viên học bổng địa phương
+    - Thanh toán Bảo hiểm Tai nạn
+    - Rút hồ sơ Đoàn viên
+
+
+- intent: greet  
+  examples: |
+    - hi!
+    - hello
+    - chào!
+    - xin chào!
+    - xin chào nhé
+    - em chào cô
+    - có vài thắc mắc
+    - cần được giải đáp
+    - em có vài câu hỏi
+    - cho em hỏi cái này
+
+- intent: goodbye
+  examples: |
+    - bye
+    - pp
+    - bii
+    - good bye
+    - chào tạm biệt
+    - hẹn gặp lại
+    - tạm biệt!
+    - bye bye
+    - chào nhé
+    - bye nha
+
+
+- intent: thankyou
+  examples: |
+    - cảm ơn
+    - xin chân thành cảm ơn
+    - cảm ơn vì thông tin hữu ích
+    - thông tin rất hữu ích ạ
+    - giúp được rất nhiều
+    - khá là ra gì và này nọ
+    - arigato
+    - thank
+    - thanks
+    - tks
+
+- intent: bot_challenge
+  examples: |
+    - ai đó?
+    - ai đang trả lời đó?
+    - ai vậy?
+    - là cái gì vậy?
+    - là bot hả?
+    - có phải bot không?
+    - danh tính
+    - ai đang trả lời vậy?
+    - ai đang nhắn tin vậy?
+    - tên bạn là gì?
+    - tên gì?
+
+- intent: ask_ability
+  examples: |
+    - khả năng
+    - tác dụng
+    - công dụng
+    - làm được gì vậy?
+    - có khả năng gì
+    - có thể làm được những gì?
+    - tác dụng là gì?
+    - khả năng thế nào?
+    - khả năng ra sao?
+    - có thể giúp được gì cho mình?
+
+
+- intent: praise
+  examples: |
+    - giỏi quá
+    - quá tuyệt
+    - số 1
+    - quá thông minh
+    - xuất sắc
+    - tuyệt vời
+    - awesome
+    - perfect
+    - quá đỉnh
+    - bạn là nhất
+
+- intent: ask_school_administrators
+  examples: |
+    - ban giám hiệu
+    - ban giám hiệu nhà trường gồm có ai?
+    - ai là hiệu trưởng của [Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - ai là chủ tịch của [Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - ban giám hiệu [Văn Lang]{"entity": "school_name", "value": "syn_shool"} gồm những ai?
+    - thành phần trong ban giám hiệu [Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - các thành viên trong ban giám hiệu [Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - ai là phó hiệu trưởng?
+    - hiện này ai là hiệu trưởng [Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - hiệu trưởng
+
+- intent: ask_school_premises
+  examples: |
+    - [cơ sở](premises) của [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - [chi nhánh]{"entity": "premises", "value": "syn_pre"} của [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - địa chỉ các [cơ sở](premises) của [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - địa chỉ các [chi nhánh]{"entity": "premises", "value": "syn_pre"}
+    - các [cơ sở](premises) của [trường]{"entity": "school_name", "value": "syn_shool"} nằm ở đâu
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} có bao nhiêu [chi nhánh]{"entity": "premises", "value": "syn_pre"}?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} có mấy [cơ sở](premises)?
+    - địa chỉ của [đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - các [cơ sở](premises) của [trường]{"entity": "school_name", "value": "syn_shool"} nằm ở quận nào?
+    - các [cơ sở](premises) của [trường]{"entity": "school_name", "value": "syn_shool"} có địa chỉ ở đâu?
+
+- intent: ask_learning_time
+  examples: |
+    - [thời gian](time) đào tạo của hệ đại học chính quy
+    - khoảng [thời gian](time) đào tạo của [Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - đào tạo đại học trong bao nhiêu [năm]{"entity": "time", "value": "syn_time"}
+    - bậc đại học đào tạo trong bao lâu?
+    - [trường mình]{"entity": "school_name", "value": "syn_shool"} đào tạo đại học bao nhiêu [năm]{"entity": "time", "value": "syn_time"}?
+    - Hệ đại học chính quy đào tạo trong bao nhiêu lâu?
+    - Chương trình chính quy được đào tạo trong bao nhiêu [năm]{"entity": "time", "value": "syn_time"}
+    - [khoa Công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} đào tạo trong bao nhiêu [năm]{"entity": "time", "value": "syn_time"}?
+    - mất mấy [năm]{"entity": "time", "value": "syn_time"} để học xong đại học tại [Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - [khoa Công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} đào tạo 4 [năm]{"entity": "time", "value": "syn_time"} đúng không?
+
+- intent: ask_organizational_form
+  examples: |
+    - hình thức đào tạo là gì?
+    - niên chế
+    - niên chế hay tín chỉ?
+    - [dhvl]{"entity": "school_name", "value": "syn_shool"} đào tạo theo niên chế hay tín chỉ?
+    - hình thức đào tạo của [Văn Lang]{"entity": "school_name", "value": "syn_shool"} là gì vậy?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo theo hình thức nào?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo theo niên chế đúng không?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo theo tín chỉ đúng không?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} đào tạo theo tín chỉ hay niên chế?
+    - [trường mình]{"entity": "school_name", "value": "syn_shool"} đào tạo theo kiểu hình thức là gì?
+
+- intent: ask_credits
+  examples: |
+    - tín chỉ là gì?
+    - em chưa hiểu học theo tín chỉ là sao vậy ạ?
+    - em vẫn chưa hiểu học theo tín chỉ là như thế nào ạ?
+    - học theo tín chỉ nghĩa là gì vậy ạ?
+    - hình thức học theo tín chỉ nghĩa là sao ạ?
+    - lợi ích của việc học theo tín chỉ là gì vậy ta
+    - giải thích giùm em học theo tín chỉ nghĩa là sao ạ?
+    - cắt nghĩa học theo tín chỉ giúp em ạ
+    - trường tổ chức học theo tín chỉ là sao ạ?
+    - trường tổ chức học theo tín chỉ là như nào ạ?
+
+- intent: ask_plan_education
+  examples: |
+    - kế hoạch đào tạo của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} là gì?
+    - kế hoạch tổ chức của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} là gì?
+    - kế hoạch đào tạo của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} ra sao?
+    - kế hoạch đào tạo của [khoa Công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - kế hoạch tổ chức của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} như thế nào?
+    - kể hoạch tổ chức giảng dạy của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} như thế nào?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức kết hoạch giảng dạy như thế nào?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức kết hoạch giảng dạy ra làm sao?
+    - kế hoạch giảng dạy của [Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức như thế nào?
+    - kế hoạch giảng dạy của [Văn Lang]{"entity": "school_name", "value": "syn_shool"} được tổ chức ra sao?
+
+- intent: ask_admission_procedures
+  examples: |
+    - thủ tục nhập học la gì?
+    - thủ tục nhập học của [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - thủ tục nhập học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - quy trình nhập học là sao?
+    - quy trình nhập học của [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - quy trình nhập học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - các bước làm thủ tục nhập học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - các bước của quy trình nhập học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - tân sinh viên trúng tuyển thì làm thủ tục nhập học ở đâu?
+    - em muốn hỏi về quy trình nhập học của [Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+
+- intent: ask_admission_records
+  examples: |
+    - hồ sơ nhập học
+    - hồ sơ nhập học của [dhvl]{"entity": "school_name", "value": "syn_shool"} gồm những gì?
+    - hồ sơ nhập học của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} gồm những gì?
+    - hồ sơ nhập học bao gồm những gì?
+    - có những loại giấy tờ gì cần thiết trong hồ sơ nhập học?
+    - hồ sơ nhập học của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các loại giấy tờ nào?
+    - hồ sơ nhập học bao gồm những giấy tờ gì?
+    - các loại giấy tờ cần có của hồ sơ nhập học?
+    - hồ sơ nhập học quy định cần có những loại giấy tờ nào?
+    - hồ sơ nhập học bao gồm những gì?
+
+- intent: ask_colleges
+  examples: |
+    - cao đẳng
+    - cao đẳng văn lang sài gòn
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} có cao đăng không?
+    - [Văn Lang]{"entity": "school_name", "value": "syn_shool"} có hình thức học cao đăng không?
+    - chương trình cao đẳng tại [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - cách thức tuyển sinh cao đẳng tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - hình thức tuyển sinh cao đẳng tại [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - yêu cầu vào cao đẳng tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - điệu kiện đầu vào cao đẳng tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - học cao đẳng tại [Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+
+- intent: ask_tuition_bank
+  examples: |
+    - nộp học phí như thế nào?
+    - đóng học phí như thế nào?
+    - chuyển khoản học phí như thế nào?
+    - tài khoản ngân hàng đóng học phí?
+    - cách đóng học phí như thế nào ạ?
+    - làm thế nào để đóng học phí tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - hình thức đóng học phí ra sao?
+    - chuyển khoản như thế nào?
+    - tài khoản ngân hàng đóng học phí của [trường mình]{"entity": "school_name", "value": "syn_shool"} là gì?
+    - làm sao để nộp học phí online?
+
+- intent: ask_late_tuition
+  examples: |
+    - trễ hạn học phí
+    - đóng học phí trễ hạn thì bị phạt như thế nào?
+    - đóng học phí trễ có bị làm sao không ạ
+    - quy chế áp dụng đối với nộp học phí trễ hạn
+    - đóng học phí chậm thì sao?
+    - đóng trễ học phí thì có hình thức bị phạt ra sao?
+    - chế tài với sinh viên thanh toán học phí chậm
+    - nộp học phí chậm hơn thời gian quy định thì sao?
+    - nộp học phí trễ có bị sao không ạ?
+    - nộp học phí trễ có bị cấm thi không?
+
+- intent: ask_parttime_job
+  examples: |
+    - parttime
+    - làm thêm
+    - việc làm thêm tại trường
+    - trường có parttime cho sinh viên ngoài giờ hay không?
+    - các job làm thêm nào có thể làm tại trường
+    - muốn làm thêm tại trường thì đăng ký ở đâu?
+    - các công việc làm thêm sau giờ học tại trường?
+    - việc làm thêm tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - parttime tại trường
+    - job làm thêm của trường
+
+- intent: ask_vhub
+  examples: |
+    - thủ tục 1 cửa
+    - em muốn hỏi về thủ tục [Nhập học lại](vhub)
+    - [Cấp giấy giới thiệu để đi thực tập](vhub) như thế nào
+    - em cần [Giải đáp thắc mắc về đăng ký môn học online](vhub)
+    - em muốn hỏi về thủ tục [Xác nhận điểm rèn luyện](vhub)
+    - em cần [Cấp lại thẻ sinh viên](vhub)
+    - [Xác nhận hồ sơ Đoàn](vhub) như thế nào
+    - em muốn xin [cấp giấy chứng nhận tạm hoãn thi hành nghĩa vụ quân sự](vhub)
+    - em muốn làm thủ tục [chuyển trường](vhub)
+    - em muốn xin [cấp lại thẻ sinh viên](vhub)
+
+- intent: ask_subject_register
+  examples: |
+    - đăng ký môn học
+    - đăng ký tín chỉ
+    - cách thức đăng ký môn học
+    - làm sao để đăng ký học phần
+    - làm thế nào để đăng ký môn học?
+    - đăng ký tín chỉ ỏ đâu?
+    - thời gian đang ký tín chỉ
+    - thòi gian đăng ký học phần
+    - làm thế nào để đăng ký tín chỉ
+    - làm sao để đăng ký các môn học trong học kỳ
+
+- intent: ask_english_score
+  examples: |
+    - Chuẩn điểm anh văn đầu ra của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - Quy định anh văn đầu ra của [dhvl]{"entity": "school_name", "value": "syn_shool"}
+    - Quy định anh văn đầu ra của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - Cần chứng chỉ anh văn nào để ra trường
+    - Bao nhiêu điểm toeic thì ra trường
+    - Quy định chuẩn đầu ra ngoại ngữ của trường mình
+    - Bao nhiêu điểm ielts thì ra trường
+    - chứng chỉ ngoại ngữ để ra trường
+    - quy định chuẩn anh văn đầu ra của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - quy đổi điểm anh văn như thế nào?
+
+- intent: ask_english_competency
+  examples: |
+    - khung năng lực ngoại ngữ 6 bậc là gì?
+    - thế nào là khung năng lực anh văn 6 bậc?
+    - cách hiểu khung năng lực ngoại ngữ Việt Nam như thế nào?
+    - thế nào là khung năng lực ngoại ngữ 6 bậc?
+    - khung năng lực anh văn 6 bậc Việt Nam là gì?
+    - thế nào là vstep?
+    - vstep là gì?
+    - hiểu như thế nào là vstep?
+    - chưa hiểu về hình thức của vstep
+    - khung năng lực ngoại ngữ 6 bậc của việt nam
+
+- intent: ask_english_contest
+  examples: |
+    - Thi tiếng anh đầu ra ở đâu?
+    - địa chỉ thi anh văn đầu ra?
+    - [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức thi đầu ra anh văn ở đâu?
+    - [dhvl]{"entity": "school_name", "value": "syn_shool"} tổ chức kì thi xét duyệt năng lực ngoại ngữ ở chỗ nào?
+    - thi vstep ở đâu?
+    - sinh viên [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} thi anh văn đầu ra ở đâu?
+    - [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức thi anh văn đầu ra ở đâu?
+    - kì thi xét duyệt năng lực ngoại ngữ để tốt nghiệp
+    - thi xét duyệt năng lực ngoại ngữ để tốt nghiệp
+    - để tốt nghiệp thì đi thi anh văn đầu ra ở đâu?
+
+- intent: ask_type_education
+  examples: |
+    - các chương trình đào tạo của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - cho em hỏi [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có những chương trình đào tạo nào?
+    - sinh viên có những lựa chọn nào khi học ngành [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - lựa chọn chương trình học như thế nào?
+    - có các chương trình học nào ở [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - có các loại đào tạo nào tại khoa [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có mấy chương trình đào tạo?
+    - có các loại chương trình đào tạo nào?
+    - chương trình đào tạo của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} ra sao?
+    - có các lựa chọn đào tạo nào sinh viên [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có thể theo học?
+
+- intent: ask_standard_program
+  examples: |
+    - chương trình tiêu chuẩn là gì?
+    - chương trình đào tạo tiêu chuẩn là gì?
+    - chương trình bình thường là gì?
+    - thế nào là chương trình tiêu chuẩn?
+    - thế nào là chương trình đào tạo tiêu chuẩn?
+    - giải thích về chương trình đào tạo tiêu chuẩn khác gì với
+    - giới thiệu về chương trình đào tạo tiêu chuẩn của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - chương trình tiêu chuẩn dành cho sinh viên [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chương trình đào tạo tiêu chuẩn dành cho sinh viên [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chương trình đào tạo tiêu chuẩn của khoa [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+  
+- intent: ask_special_program
+  examples: |
+    - chương trình đặc biệt là gì?
+    - chương trình đào tạo đặc biệt là gì?
+    - chương trình nâng cấp là gì?
+    - thế nào là chương trình đặc biệt?
+    - thế nào là chương trình đào tạo đặc biệt?
+    - giải thích về chương trình đào tạo đặc biệt khác gì với
+    - giới thiệu về chương trình đào tạo đặc biệt của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - chương trình đặc biệt dành cho sinh viên [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chương trình đào tạo đặc biệt dành cho sinh viên [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chương trình đào tạo đặc biệt của khoa [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_results_study
+  examples: |
+    - cách để xem kết quả học tập của mình
+    - cách để xem điểm tổng kết của mình
+    - cách kiểm tra điểm học tập của mình 
+    - cách kiểm tra kết quả học tập của bản thân
+    - em muốn xem điểm tổng kết môn
+    - em muốn xem điểm của học kỳ vừa rồi
+    - làm thế nào để xem kết quả học tập của mình
+    - kiểm tra điểm tổng kết môn ở đâu?
+    - làm thế nào để xem điểm tổng kết học kỳ
+    - xem điểm học tập ở đâu?
+
+- intent: ask_education_program
+  examples: |
+    - chương trình đào tạo được tổ chức như thế nào?
+    - cho em hỏi về chương trình giảng dạy trong 4 năm của [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"} ra sao ạ?
+    - chương trình đào tạo của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} được tổ chức ra sao?
+    - có thể trình bày cho em biết về chương trình đào tạo của [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"} trong 4 năm tới được không ạ?
+    - [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"} tổ chức chương trình giảng dạy ra sao trong 4 năm
+    - em sẽ được học kì trong 4 năm còn ngồi tại ghế nhà trường?
+    - khung chương trình học của [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"} tổ chức chương trình giảng dạy như thế nào?
+    - kế hoạch giảng dạy của [khoa]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - kế hoạch về chương trình đào tạo của [khoa]{"entity": "faculty_name", "value": "syn_faculty"} tổ chức như thế nào?
+    
+- intent: ask_compulsory_credits
+  examples: |
+    - số tín chỉ bắt buộc mà sinh viên cần đạt?
+    - khối lượng kiến thức cần đạt
+    - số tín chỉ bắt buộc của ngành [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu?
+    - khối lượng kiến thức toàn khóa của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu?
+    - cần đạt bao nhiêu tín chỉ toàn khóa của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - cần đạt bao nhiêu tín chỉ hết 4 năm học của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - khối lượng kiến thức cần đạt được của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} để ra trường là bao nhiêu?
+    - khối lượng kiến thức đủ để ra trường của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu?
+    - số lượng tín chỉ cần để ra trường của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - số lượng tín chỉ đủ để ra trường của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_address
+  examples: |
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} nằm ở [cơ sở](premises) mấy?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} nằm tại [cơ sở](premises) nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} nằm ở địa chỉ nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} nằm tại [cơ sở](premises) mấy?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} nằm ở quận nào?
+    - địa chỉ của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - địa chỉ [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} ở quận nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có địa chỉ là gì?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có địa chỉ ở đâu?
+    - cho em biết về địa chỉ của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_fee_policy
+  examples: |
+    - chính sách học phí ra sao?
+    - chính sách học phí của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} ra sao?
+    - chính sách học phí của [Văn Lang]{"entity": "school_name", "value": "syn_shool"} như thế nào?
+    - học phí của khoa [cntt]{"entity": "faculty_name", "value": "syn_faculty"} được tính ra sao?
+    - học phí của khoa [cntt]{"entity": "faculty_name", "value": "syn_faculty"} được tính như thế nào?
+    - công thức tính học phí toàn khóa của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - cách tính học phí toàn khóa của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - cách tính tổng học phí phải đóng 
+    - học phí toàn khóa được tính như thế nào?
+    - học phí toàn khóa được tính ra sao?
+
+- intent: ask_fee_one_credit
+  examples: |
+    - Đơn giá 1 tín chỉ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu?
+    - giá 1 tín chỉ của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} là bao nhiêu?
+    - 1 tín chỉ bao nhiêu tiền?
+    - giá 1 tín chỉ bao tiền?
+    - giá làm tròn 1 tín chỉ là bao nhiêu tiền?
+    - một tín chỉ bao nhiêu tiền?
+    - một tín chỉ có giá bao nhiêu?
+    - một tín chỉ hiện nay có giá bao nhiêu vậy ạ?
+    - cho em hỏi về giá của 1 tín chỉ hiện nay?
+    - giá tín chỉ hiện nay của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_subject
+  examples: |
+    - học phần là cái gì?
+    - học phần là gì?
+    - thế nào là học phần?
+    - học phần bắt buộc là gì?
+    - học phần tự chọn là gì?
+    - học phần tiên quyết là gì?
+    - học phần học trước, học sau là gì?
+    - học phần tương đương là gì?
+    - thế nào là học phần bắt buộc?
+    - thế nào là học phần tự chọn?
+
+- intent: ask_course_assessment
+  examples: |
+    - cách đánh giá môn học?
+    - cách đánh giá học phần?
+    - phương thức đánh giá học phần?
+    - phương thức đánh giá môn học?
+    - cách thức đánh giá môn học?
+    - cách thức đánh giá học phần?
+    - hình thức đánh giá môn học?
+    - hình thức đánh giá học phần?
+    - đánh giá môn học ra sao ạ?
+    - đánh giá học phần như thế nào ạ?
+
+- intent: ask_get_subject
+  examples: |
+    - Điều kiện để vượt qua một môn học là gì ạ?
+    - Cần bao nhiêu điểm để qua môn?
+    - Điểm số bao nhiêu để qua môn?
+    - Để qua môn thì cần bao nhiều điểm trung bình?
+    - Trường mình quy định bao nhiêu điểm thì qua môn vậy ạ?
+    - Cần đạt tối thiểu bao nhiều điểm để qua môn?
+    - điều kiện để qua môn 
+    - điều kiến tối thiểu để qua môn
+    - qua môn cần điều kiện gì?
+    - làm thế nào để qua môn?
+
+- intent: ask_average_score_formula
+  examples: |
+    - công thức tính điểm trung bình môn học
+    - công thức tính điểm trung bình học phần
+    - cách thức tính điểm trung bình môn
+    - cách thức tính điểm trung bình học phần
+    - cách tính điểm trung bình môn học?
+    - tính điểm trung bình môn như thế nào?
+    - làm sao để tính điểm trung bình?
+    - tính điểm trung bình môn như thế nào?
+    - cách nào để tính điểm trung bình?
+    - cho em công thức tính điểm trung bình môn?
+
+- intent: ask_point_exchange
+  examples: |
+    - cách quy đổi điểm học tập?
+    - bảng quy đổi điểm học tập?
+    - bảng chuyển thang điểm học tập
+    - bảng quy đổi thang điểm học tập
+    - cách quy đổi thang điểm học tập
+    - điểm là đạt hay không đạt
+    - cách chuyển điểm học tập
+    - cách chuyển đổi thang điểm 10 sang thang điểm 4
+    - cách đổi thang 10 sang thang chữ
+    - quy đổi thang điểm 10 sang thang điểm 4
+
+- intent: ask_graduation_conditions
+  examples: |
+    - cần gì để tốt nghiệp?
+    - những điều kiện nào là cần để ra trường?
+    - điều kiện đủ để tốt nghiệp là gì?
+    - cần những điều kiện nào để tốt nghiệp?
+    - các yêu cầu cần thiết để tốt nghiệp?
+    - tốt nghiệp thì cần gì?
+    - tốt nghiệp cần điều kiện nào?
+    - ra trường thì cần gì?
+    - làm sao để ra trường đúng hạn?
+    - yêu cầu đối với sinh viên muốn tốt nghiệp?
+
+- intent: ask_schedule
+  examples: |
+    - thời khóa biểu của em
+    - Làm sao để xem được thời khóa biểu ạ?
+    - chỉ em cách nào để xem được thời khóa biểu ngày?
+    - chỉ em cách xem thời khóa biểu với?
+    - truy cập vào đâu để thời khóa biểu
+    - lịch học của em coi ở đâu ạ?
+    - làm sao để coi được lịch học?
+    - coi lịch học cá nhân ở trang nào?
+    - trang nào coi được lịch học cá nhân
+    - xem lịch học ở trang nào
+
+- intent: ask_scholarship
+  examples: |
+    - chương trình học bổng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - chương trình học bổng của [trường mình]{"entity": "school_name", "value": "syn_shool"}
+    - chương trình học bổng như thế nào?
+    - khoa có các suất học bổng nào?
+    - cách để nhận học bổng của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - cách để đạt được học bổng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - làm sao để nhận được học bổng của [trường mình]{"entity": "school_name", "value": "syn_shool"}?
+    - làm thế nào để đạt được học bổng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hướng dấn em cách đạt học bổng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}
+    - chỉ em cách có học bổng
+
+- intent: ask_tuition_support
+  examples: |
+    - chính sách hỗ trợ học phí của [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}?
+    - chính sách miễn giảm học phí của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - sinh viên nghèo được hỗ trợ học phí như thế nào?
+    - trường có chính sách miễn giảm học phí cho sinh viên có hoàn cảnh khó khăn hay không?
+    - sinh viên là con, cháu thương binh liệt sĩ có được hỗ trợ học phí gì hay không?
+    - sinh viên nghèo được [trường]{"entity": "school_name", "value": "syn_shool"} hỗ trợ ra sao?
+    - sinh viên có hoàn cảnh khó khăn thì có chính sách hỗ trợ nào không?
+    - có các ciính sách hỗ trợ học phí nào dành cho sinh viên của [trường]{"entity": "school_name", "value": "syn_shool"}?
+    - chính sách miễn giảm học phí của [trường]{"entity": "school_name", "value": "syn_shool"} ra sao?
+    - chính sách hỗ trợ học phí của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} như thế nào?
+
+
+- intent: ask_teaching_assistant
+  examples: |
+    - Đăng ký làm trợ giảng tại [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - trợ giảng tại [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - cách để trở thành trợ giảng tại [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - em muốn đăng ký làm trợ lý nghiên cứu
+    - yêu cầu để trở thành trợ lý nghiên cứu của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn đăng ký làm trợ giảng
+    - đăng ký làm trợ giảng ở đâu?
+    - đăng ký làm trợ giảng cho [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+    - cách để trở thành trợ giảng
+    - yêu cầu của trợ giảng [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}
+
+- intent: ask_cert
+  examples: |
+    - loại bằng tốt nghiệp của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - bằng tốt nghiệp của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là bằng cử nhân hay kỹ sư Công nghệ thông tin
+    - tốt nghiệp [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} với bằng loại gì?
+    - bằng cử nhân hay bằng kỹ sư
+    - có phải bằng cử nhân hay không?
+    - văn bằng tốt nghiệp của [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - sinh viên tốt nghiệp ngành [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} thì có bằng gì?
+    - sinh viên tốt nghiệp với chuyên ngành thì có bằng loại gì?
+    - loại bằng tốt nghiệp của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - tốt nghiệp [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có bằng cử nhân đúng không?
+
+- intent: ask_online_learning
+  examples: |
+    - học online
+    - [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} tổ chức học online như thế nào nhỉ?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} tổ chức học online như thế nào vậy?
+    - hình thức học trực tuyến ra sao?
+    - cách tổ chức học trực tuyến tại trường mình?
+    - hình thức học trực tuyến của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}? 
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} tổ chức học online ra sao?
+    - em muốn biết về hình thực học trực tuyến của [khoa mình]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hình thức học online ra sao?
+    - cách thức học trực tuyến?
+
+- intent: ask_academic_advisor
+  examples: |
+    - cố vấn học tập là gì?
+    - cố vấn là ai?
+    - ai là cố vấn học tập?
+    - cố vấn học tập có vai trò gì?
+    - cố vấn học tập giúp đỡ gì cho sinh viên?
+    - nhiệm vụ của chủ nhiệm?
+
+- intent: ask_internship
+  examples: |
+    - chương trình thực tập tại [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các chương trình internship nào?
+    - các chương trình thực tập được tổ chức tại khoa?
+    - em mong muốn đi thực tập thì [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có hỗ trợ không?
+    - thực tập doanh nghiệp ở đâu?
+    - thực tập đồ án
+    - thực tập doanh nghiệp
+    - chương trình internship của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn thực tập thì xem ở đâu?
+    - đi thực tập sớm có được không?
+
+- intent: ask_graduation_thesis
+  examples: |
+    - khóa luận tốt nghiệp là gì?
+    - luận án tốt nghiệp là gì?
+    - luận văn tốt nghiệp là gì?
+    - thế nào là khóa luận tốt nghiệp?
+    - thế nào là luận án?
+    - thế nào là luận văn?
+    - để tốt nghiệp thì cần phải làm khóa luận tốt nghiệp phải không?
+    - hình thức làm khóa luận tốt nghiệp của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - khi nào thì làm khóa luận?
+    - thời gian làm khóa luận trong bao lâu?
+
+- intent: ask_club
+  examples: |
+    - câu lạc bộ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - clb của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có câu lạc bộ hay không?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có club nào?
+    - nơi giao lưu học hỏi của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - trang fanpage câu lạc bộ tin học của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_event
+  examples: |
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các event nào được tổ chức?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có các sự kiện nào được tổ chức?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có tổ chức sự kiện nào trong năm hay không?
+    - sinh viên của [cntt]{"entity": "faculty_name", "value": "syn_faculty"} được tham gia event nào?
+    - các sự kiện hằng năm của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - sự kiện trong năm nào quan trọng của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_max_credits
+  examples: |
+    - số tín chỉ tối đa được đăng ký trong một học kỳ?
+    - 1 học kỳ em có thể đăng ký được bao nhiêu tín chỉ tối đa vậy ạ?
+    - trong 1 học kỳ em có thể đăng ký được bao nhiêu tín chỉ tối đa vậy?
+    - có thể đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ vậy nhỉ?
+    - để nhận được học bổng thì số tín chỉ tối đa và tối thiểu phải đăng ký là bao nhiêu?
+    - số tín chỉ tối thiểu phải đăng ký?
+    - số tín chỉ tối đa được đăng ký?
+    - em được đăng ký tối đa bao nhiêu tín chỉ?
+    - em bắt buộc phải đăng ký tối thiểu bao nhiêu tín chỉ
+    - số tín chỉ có thể đăng ký trong 1 học kỳ?
+
+- intent: ask_maximum_time
+  examples: |
+    - thời gian tối đa theo học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - thời gian tối đa để hoàn thành chương trình học tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - học bao lâu thì bị đuổi khỏi trường?
+    - [trường mình]{"entity": "school_name", "value": "syn_shool"} có áp dụng thời gian học quá hạn với sinh viên không?
+    - thời gian tối đa trước khi bị hủy kết quả học tập?
+    - học quá mấy năm thì bị đuổi?
+    - thời gian theo học tối đa tại [trường]{"entity": "school_name", "value": "syn_shool"}?
+    - học tối đa bao lâu thì bị hủy kết quả?
+    - học bao lâu thì không cho học nữa?
+    - bị hủy kết quả học tập nếu học quá mấy năm?
+
+- intent: ask_postgraduate_program
+  examples: |
+    - các chương trình sau đại học của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} có đào tạo thạc sĩ ngành [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} không?
+    - sau khi tốt nghiệp thì học lên thạc sĩ [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} bằng cách nào?
+    - có thể học thạc sĩ [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"} không?
+    - các hình thức giảng dạy sau đại học
+    - học thạc sĩ [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} tại [Đại học Văn Lang]{"entity": "school_name", "value": "syn_shool"}
+    - chương trình hợp tác quốc tế của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - các chương trình hợp tác quốc tế đối với [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - có các chương trình nào sau đại học vậy ạ?
+    - học thạc sĩ như thế nào sau khi tốt nghiệp tại [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_behavior_score
+  examples: |
+    - cách phân loại điểm rèn luyện?
+    - mức phân loại điểm rèn luyện?
+    - đánh giá điểm rèn luyện như thế nào?
+    - mức đánh giá điểm rèn luyện
+    - bảng đánh giá điểm rèn luyện
+    - các mức xếp loại điểm rèn luyện
+    - hình thức tổ chức chấm điểm rèn luyện của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là gì?
+    - phân loại điểm rèn luyện tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - bao nhiêu điểm rèn luyện thì đạt loại
+    - cần bao nhiêu điểm rèn luyện thì đạt loại
+
+- intent: ask_criteria_behavior_score
+  examples: |
+    - các tiêu chí đánh giá điểm rèn luyện?
+    - có các tiêu chí nào để đánh giá điểm rèn luyện cá nhân?
+    - dựa trên các tiêu chuẩn nào để [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} đánh giá điểm rèn luyện cho sinh viên?
+    - có bao nhiêu tiêu chí đánh giá điểm rèn luyện?
+    - tiêu chí nào để dựa vào đánh giá điểm rèn luyện sinh viên?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} chấm điểm rèn luyện dựa trên các tiêu chí nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} chấm điểm rèn luyện dựa vào đâu?
+    - dựa vào đâu chấm điểm rèn luyện?
+    - chấm điểm rèn luyện ở trang nào vậy ạ?
+    - tự chấm điểm rèn luyện cá nhân của học kỳ ở đâu?
+
+- intent: ask_low_behavior_score
+  examples: |
+    - điểm rèn luyện [kém](level) thì có bị đình chỉ học hay không?
+    - điểm rèn luyện [kém](level) thì có bị buộc thôi học hay không?
+    - hình thức xử phạt với điểm rèn luyện [kém](level)?
+    - buộc thôi học với điểm rèn luyện [yếu](level) thì có đúng không?
+    - 2 học kỳ liên tiếp bị điểm rèn luyện [yếu](level) thì sẽ bị xử lí như thế nào?
+    - sinh viên có điểm rèn luyện [kém](level) thì bị phạt như thế nào?
+    - sinh viên có điểm rèn luyện [yếu](level) thì bị áp dụng hình phạt gì?
+    - 2 học kỳ liên tiếp bị điểm rèn luyện [kém](level) thì sẽ bị xử lí như thế nào?
+    - điểm rèn luyện [kém](level) thì có bị sao không ạ?
+    - em bị điểm rèn luyện [yếu](level) thì bị phạt ra sao ạ?
+
+- intent: ask_coercion
+  examples: |
+    - tại sao bị buộc thôi học?
+    - lý do bị buộc thôi học?
+    - hình thức bị buộc thôi học tại [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hình thức kỷ luật buộc tạm ngưng học tập?
+    - vì sao bị kỷ luật buộc tạm dừng học tập?
+    - tạm dừng học tập với sinh viên?
+    - lí do bị đình chỉ học tập của sinh viên?
+    - sinh viên bị buộc thôi học với lý do gì?
+    - hình thức buộc thôi học?
+    - các hình thức đình chỉ học tập?
+
+- intent: ask_results_alert
+  examples: |
+    - cảnh báo học tập
+    - tại sao bị cảnh báo học tập
+    - lý do bị cảnh cáo học tập?
+    - hình thức bị cảnh báo học tập tại [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hình thức kỷ luật cảnh báo học tập?
+    - vì sao bị kỷ luật cảnh báo học tập?
+    - sinh viên bị kỷ luật học tập?
+    - sinh viên bị cảnh báo học tập đo đâu?
+    - vì sao bị cảnh báo học tập?
+    - em bị cảnh báo học tập thì có sao không?
+
+- intent: ask_graduation_grading
+  examples: |
+    - thang điểm xếp loại tốt nghiệp
+    - cách xếp loại tốt nghiệp
+    - cách tính điểm để xếp loại tốt nghiệp
+    - xếp loại tốt nghiệp như thế nào?
+    - có thể xếp loại tốt nghiệp theo thang điểm nào
+    - quy đổi thang điểm xếp loại tốt nghiệp
+    - tốt nghiệp bao nhiêu điểm thì đạt loại
+    - để đạt được loại thì cần tốt nghiệp với điểm trung bình bao nhiêu?
+    - thang điểm để quy đổi loại tốt nghiệp
+    - tốt nghiệp bằng giỏi thì cần bao nhiêu điểm trung bình
+
+- intent: ask_contact_information
+  examples: |
+    - làm sao để liên hệ với [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - cách thức liên hệ với [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - thông tin liên hệ với [khoa cnttin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - các cách liên lạc với [khoa cnthongtin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - các kênh liên lạc với [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hình thức liên hệ với [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - thông tin liên hệ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - liên hệ với [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} như thế nào?
+    - em muốn xin thông tin liên hệ của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - có thể cho em thông tin liên lạc của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} được không ạ?
+
+- intent: ask_dean
+  examples: |
+    - trưởng khoa
+    - trưởng khoa của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} là ai?
+    - ai đẹp trai nhất [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chân dung trưởng khoa của [khoa cnttin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - khoa trưởng của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - ai đang là trưởng khoa của [khoa cnthongtin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - người đứng đâu của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - thông tin trưởng khoa của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - hoàng lê minh
+    - thầy minh
+
+- intent: ask_general_subject
+  examples: |
+    - đại cương
+    - môn học kiến thức cơ sở
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các môn học đại cương nào?
+    - kiến thức đại cương bao gồm?
+    - các môn học thuộc khối kiến thức giáo dục đại cương?
+    - những môn nào là môn kiến thức đại cương?
+    - khối kiến thức giáo dục đại cương?
+    - các môn bắt buộc thuộc kiến thức giáo dục đại cương?
+    - môn học đại cương là gì?
+    - kiến thức giáo dục đại cương tại đại học là gì?
+
+- intent: ask_basic_subject
+  examples: |
+    - cơ sở ngành là gì?
+    - môn học cơ sở ngành là gì?
+    - thế nào là môn học cơ sở ngành?
+    - môn cơ sở ngành gồm những môn nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các môn cơ sở ngành nào?
+    - các môn cơ sở ngành của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - các môn học thuộc nhóm kiến thức cơ sở ngành?
+    - những môn nào là môn cơ sở ngành?
+    - kiến thức cơ sở ngành là gì?
+    - kiến thức cơ sở ngành của ngành [cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_elective_subject
+  examples: |
+    - tự chọn chuyên ngành là gì?
+    - môn học tự chọn chuyên ngành là gì?
+    - thế nào là môn học tự chọn chuyên ngành?
+    - môn học chuyên ngành tự chọn là gì?
+    - môn tự chọn chuyên ngành gồm những môn nào?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các môn tự chọn chuyên ngành nào?
+    - nhóm môn học thuộc khối kiến kiến thức tự chọn chuyên ngành?
+    - sinh viên [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} có các môn tự chọn chuyên ngành nào?
+    - cho em biết về môn tự chọn của chuyên ngành?
+    - các môn học tự chọn chuyên ngành là những môn nào vậy ạ?
+
+- intent: ask_major
+  examples: |
+    - chuyên ngành là gì?
+    - chuyên ngành đào tạo của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} đào tạo các chuyên ngành nào?
+    - [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} có các chuyên ngành nào?
+    - các chuyên ngành đào tạo chính của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - chuyên ngành của [khoa công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} bao gồm?
+    - cách thức đào tạo chuyên ngành của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"} như thế nào?
+    - có bao nhiêu chuyên ngành đào tạo khi học ngành [công nghệ thông tin]{"entity": "faculty_name", "value": "syn_faculty"} tại [dhvl]{"entity": "school_name", "value": "syn_shool"}?
+    - tư vấn cho em các chuyên ngành?
+    - em có thể lựa chọn chuyên ngành gì của [khoa cntt]{"entity": "faculty_name", "value": "syn_faculty"}?
+
+- intent: ask_data_technology
+  examples: |
+    - [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} là gì?
+    - [khoa học dữ liệu]{"entity": "data_major", "value": "syn_data"} là gì?
+    - [dữ liệu]{"entity": "data_major", "value": "syn_data"} là gì?
+    - tư vấn giúp em ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - ngành [dữ liệu]{"entity": "data_major", "value": "syn_data"} là gì?
+    - thế nào là chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}
+    - có thể cho em biết về ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} được không ạ?
+    - ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} có gì thú vị?
+    - cơ hội việc làm của ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} cần có kiến thức cơ bản nào?
+
+- intent: ask_software_technology
+  examples: |
+    - [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} là gì?
+    - [kỹ thuật phần mềm]{"entity": "software_major", "value": "syn_software"} là gì?
+    - [phần mềm]{"entity": "software_major", "value": "syn_software"} là gì?
+    - tư vấn giúp em ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - ngành [phần mềm]{"entity": "software_major", "value": "syn_software"} là gì?
+    - thế nào là chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - có thể cho em biết về ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} được không ạ?
+    - ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} có gì thú vị?
+    - cơ hội việc làm của ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} cần có kiến thức cơ bản nào?
+    
+- intent: ask_network_security
+  examples: |
+    - [an ninh mạng]{"entity": "network_major", "value": "syn_network"} là gì?
+    - [iot]{"entity": "network_major", "value": "syn_network"} là gì?
+    - [an ninh]{"entity": "network_major", "value": "syn_network"} là gì?
+    - tư vấn giúp em ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - ngành [iot]{"entity": "network_major", "value": "syn_network"} là gì?
+    - thế nào là chuyên ngành [an ninh mạng và iot]{"entity": "network_major", "value": "syn_network"}?
+    - có thể cho em biết về ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} được không ạ?
+    - ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} có gì thú vị?
+    - cơ hội việc làm của ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} cần có kiến thức cơ bản nào?
+
+- intent: ask_information_system
+  examples: |
+    - [tin học quản trị]{"entity": "system_major", "value": "syn_system"} là gì?
+    - [hệ thống thông tin]{"entity": "system_major", "value": "syn_system"} là gì?
+    - [quản trị]{"entity": "system_major", "value": "syn_system"} là gì?
+    - tư vấn giúp em ngành [hệ thống]{"entity": "system_major", "value": "syn_system"}?
+    - ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} là gì?
+    - thế nào là chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - có thể cho em biết về ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} được không ạ?
+    - ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} có gì thú vị?
+    - cơ hội việc làm của ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} cần có kiến thức cơ bản nào?
+
+- intent: ask_data_subject
+  examples: |
+    - các môn học của chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} gồm những môn nào?
+    - những môn học bắt buộc của ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - học phần bắt buộc chuyên ngành của ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - cần phải học những môn nào mới đúng chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - những môn học nào là môn học của chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"}?
+    - để tốt nghiệp với chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} thì phải học những môn nào?
+    - những môn học chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} được giảng dạy tại [khoa]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn học chuyên ngành [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} thì cần phải học những môn gì?
+    - học [công nghệ dữ liệu]{"entity": "data_major", "value": "syn_data"} thì học những gì?
+
+- intent: ask_software_subject
+  examples: |
+    - các môn học của chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} gồm những môn nào?
+    - những môn học bắt buộc của ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - học phần bắt buộc chuyên ngành của ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - cần phải học những môn nào mới đúng chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - những môn học nào là môn học của chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"}?
+    - để tốt nghiệp với chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} thì phải học những môn nào?
+    - những môn học chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} được giảng dạy tại [khoa]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn học chuyên ngành [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} thì cần phải học những môn gì?
+    - học [công nghệ phần mềm]{"entity": "software_major", "value": "syn_software"} thì học những gì?
+
+- intent: ask_network_subject
+  examples: |
+    - các môn học của chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} gồm những môn nào?
+    - những môn học bắt buộc của ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - học phần bắt buộc chuyên ngành của ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - cần phải học những môn nào mới đúng chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - những môn học nào là môn học của chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"}?
+    - để tốt nghiệp với chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} thì phải học những môn nào?
+    - những môn học chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} được giảng dạy tại [khoa]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn học chuyên ngành [an ninh mạng]{"entity": "network_major", "value": "syn_network"} thì cần phải học những môn gì?
+    - học [an ninh mạng]{"entity": "network_major", "value": "syn_network"} thì học những gì?
+
+- intent: ask_system_subject
+  examples: |
+    - các môn học của chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} gồm những môn nào?
+    - những môn học bắt buộc của ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - học phần bắt buộc chuyên ngành của ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - cần phải học những môn nào mới đúng chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - những môn học nào là môn học của chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"}?
+    - để tốt nghiệp với chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} thì phải học những môn nào?
+    - những môn học chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} được giảng dạy tại [khoa]{"entity": "faculty_name", "value": "syn_faculty"}?
+    - em muốn học chuyên ngành [tin học quản trị]{"entity": "system_major", "value": "syn_system"} thì cần phải học những môn gì?
+    - học [tin học quản trị]{"entity": "system_major", "value": "syn_system"} thì học những gì?
+
+- intent: out_of_scope
+  examples: |
+    - học Văn Lang có bồ hay không
+    - món ăn ngon
+    - việc làm thêm bên ngoài
+    - trai xinh gái đẹp
+    - bãi giữ xe 
+    - địa điểm vui chơi
+    - địa điểm du lịch
+    - quay cóp
+    - chơi game
+    - giải trí

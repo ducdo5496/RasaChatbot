@@ -1,0 +1,447 @@
+version: "3.0"
+
+rules:
+
+## greet
+- rule: greet
+  steps:
+  - intent: greet      
+  - action: utter_greet
+
+## goodbye
+- rule: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye      
+
+## thankyou
+- rule: thankyou
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou     
+
+## bot_challenge
+- rule: bot_challenge
+  steps:
+  - intent: bot_challenge      
+  - action: utter_bot_challenge
+
+## ask_ability
+- rule: ask_ability
+  steps:
+  - intent: ask_ability
+  - action: utter_ask_ability
+
+## praise
+- rule: praise
+  steps:
+  - intent: praise
+  - action: utter_praise
+
+## ask_school_administrators
+- rule: ask_school_administrators
+  steps:
+  - intent: ask_school_administrators
+  - action: utter_ask_school_administrators
+
+## ask_school_premises
+- rule: ask_school_premises
+  steps:
+  - intent: ask_school_premises
+  - action: utter_ask_school_premises
+
+## ask_learning_time
+- rule: ask_learning_time
+  steps:
+  - intent: ask_learning_time
+  - action: utter_ask_learning_time
+
+## ask_organizational_form
+- rule: ask_organizational_form
+  steps:
+  - intent: ask_organizational_form
+  - action: utter_ask_organizational_form
+
+## ask_credits
+- rule: ask_credits
+  steps:
+  - intent: ask_credits
+  - action: utter_ask_credits
+
+## ask_plan_education
+- rule: ask_plan_education
+  steps:
+  - intent: ask_plan_education
+  - action: utter_ask_plan_education
+
+## ask_admission_procedures
+- rule: ask_admission_procedures
+  steps:
+  - intent: ask_admission_procedures
+  - action: utter_ask_admission_procedures
+
+## ask_admission_records
+- rule: ask_admission_records
+  steps:
+  - intent: ask_admission_records
+  - action: utter_ask_admission_records
+
+## ask_colleges
+- rule: ask_colleges
+  steps:
+  - intent: ask_colleges
+  - action: utter_ask_colleges
+
+## ask_tuition_bank
+- rule: ask_tuition_bank
+  steps:
+  - intent: ask_tuition_bank
+  - action: utter_ask_tuition_bank
+
+## ask_late_tuition
+- rule: ask_late_tuition
+  steps:
+  - intent: ask_late_tuition
+  - action: utter_ask_late_tuition
+
+## ask_parttime_job
+- rule: ask_parttime_job
+  steps:
+  - intent: ask_parttime_job
+  - action: utter_ask_parttime_job
+
+## ask_vhub
+- rule: ask_vhub
+  steps:
+  - intent: ask_vhub
+  - action: utter_ask_vhub
+
+## ask_subject_register
+- rule: ask_subject_register
+  steps:
+  - intent: ask_subject_register
+  - action: utter_ask_subject_register
+
+## ask_english_score
+- rule: ask_english_score
+  steps:
+  - intent: ask_english_score
+  - action: utter_ask_english_score
+
+## ask_english_competency
+- rule: ask_english_competency
+  steps:
+  - intent: ask_english_competency
+  - action: utter_ask_english_competency
+
+## ask_english_contest
+- rule: ask_english_contest
+  steps:
+  - intent: ask_english_contest
+  - action: utter_ask_english_contest
+
+## ask_type_education
+- rule: ask_type_education
+  steps:
+  - intent: ask_type_education
+  - action: utter_ask_type_education
+
+## ask_standard_program
+- rule: ask_standard_program
+  steps:
+  - intent: ask_standard_program
+  - action: utter_ask_standard_program
+
+## ask_special_program
+- rule: ask_special_program
+  steps:
+  - intent: ask_special_program
+  - action: utter_ask_special_program
+
+## ask_results_study
+- rule: ask_results_study
+  steps:
+  - intent: ask_results_study
+  - action: utter_ask_results_study
+
+## ask_education_program
+- rule: ask_education_program
+  steps:
+  - intent: ask_education_program
+  - action: utter_ask_education_program
+
+## ask_compulsory_credits
+- rule: ask_compulsory_credits
+  steps:
+  - intent: ask_compulsory_credits
+  - action: utter_ask_compulsory_credits
+
+## ask_address
+- rule: ask_address
+  steps:
+  - intent: ask_address
+  - action: utter_ask_address
+
+## ask_fee_policy
+- rule: ask_fee_policy
+  steps:
+  - intent: ask_fee_policy
+  - action: utter_ask_fee_policy
+
+## ask_fee_one_credit
+- rule: ask_fee_one_credit
+  steps:
+  - intent: ask_fee_one_credit
+  - action: utter_ask_fee_one_credit
+
+## ask_subject
+- rule: ask_subject
+  steps:
+  - intent: ask_subject
+  - action: utter_ask_subject
+
+## ask_course_assessment
+- rule: ask_course_assessment
+  steps:
+  - intent: ask_course_assessment
+  - action: utter_ask_course_assessment
+
+## ask_get_subject
+- rule: ask_get_subject
+  steps:
+  - intent: ask_get_subject
+  - action: utter_ask_get_subject
+
+## ask_average_score_formula
+- rule: ask_average_score_formula
+  steps:
+  - intent: ask_average_score_formula
+  - action: utter_ask_average_score_formula
+
+## ask_point_exchange
+- rule: ask_point_exchange
+  steps:
+  - intent: ask_point_exchange
+  - action: utter_ask_point_exchange
+
+## ask_graduation_conditions
+- rule: ask_graduation_conditions
+  steps:
+  - intent: ask_graduation_conditions
+  - action: utter_ask_graduation_conditions
+
+## ask_schedule
+- rule: ask_schedule
+  steps:
+  - intent: ask_schedule
+  - action: utter_ask_schedule
+
+## ask_scholarship
+- rule: ask_scholarship
+  steps:
+  - intent: ask_scholarship
+  - action: utter_ask_scholarship
+
+## ask_tuition_support
+- rule: ask_tuition_support
+  steps:
+  - intent: ask_tuition_support
+  - action: utter_ask_tuition_support
+
+## ask_teaching_assistant
+- rule: ask_teaching_assistant
+  steps:
+  - intent: ask_teaching_assistant
+  - action: utter_ask_teaching_assistant
+
+## ask_cert
+- rule: ask_cert
+  steps:
+  - intent: ask_cert
+  - action: utter_ask_cert
+
+## ask_online_learning
+- rule: ask_online_learning
+  steps:
+  - intent: ask_online_learning
+  - action: utter_ask_online_learning
+
+## ask_academic_advisor
+- rule: ask_academic_advisor
+  steps:
+  - intent: ask_academic_advisor
+  - action: utter_ask_academic_advisor
+
+## ask_internship
+- rule: ask_internship
+  steps:
+  - intent: ask_internship
+  - action: utter_ask_internship
+
+## ask_graduation_thesis
+- rule: ask_graduation_thesis
+  steps:
+  - intent: ask_graduation_thesis
+  - action: utter_ask_graduation_thesis
+
+## ask_club
+- rule: ask_club
+  steps:
+  - intent: ask_club
+  - action: utter_ask_club
+
+## ask_event
+- rule: ask_event
+  steps:
+  - intent: ask_event
+  - action: utter_ask_event
+
+## ask_max_credits
+- rule: ask_max_credits
+  steps:
+  - intent: ask_max_credits
+  - action: utter_ask_max_credits
+
+## ask_maximum_time
+- rule: ask_maximum_time
+  steps:
+  - intent: ask_maximum_time
+  - action: utter_ask_maximum_time
+
+## ask_postgraduate_program
+- rule: ask_postgraduate_program
+  steps:
+  - intent: ask_postgraduate_program
+  - action: utter_ask_postgraduate_program
+
+## ask_behavior_score
+- rule: ask_behavior_score
+  steps:
+  - intent: ask_behavior_score
+  - action: utter_ask_behavior_score
+
+## ask_criteria_behavior_score
+- rule: ask_criteria_behavior_score
+  steps:
+  - intent: ask_criteria_behavior_score
+  - action: utter_ask_criteria_behavior_score
+
+## ask_low_behavior_score
+- rule: ask_low_behavior_score
+  steps:
+  - intent: ask_low_behavior_score
+  - action: utter_ask_low_behavior_score
+
+## ask_coercion
+- rule: ask_coercion
+  steps:
+  - intent: ask_coercion
+  - action: utter_ask_coercion
+
+## ask_results_alert
+- rule: ask_results_alert
+  steps:
+  - intent: ask_results_alert
+  - action: utter_ask_results_alert
+
+## ask_graduation_grading
+- rule: ask_graduation_grading
+  steps:
+  - intent: ask_graduation_grading
+  - action: utter_ask_graduation_grading
+
+## ask_contact_information
+- rule: ask_contact_information
+  steps:
+  - intent: ask_contact_information
+  - action: utter_ask_contact_information
+
+## ask_dean
+- rule: ask_dean
+  steps:
+  - intent: ask_dean
+  - action: utter_ask_dean
+
+## ask_general_subject
+- rule: ask_general_subject
+  steps:
+  - intent: ask_general_subject
+  - action: utter_ask_general_subject
+
+## ask_basic_subject
+- rule: ask_basic_subject
+  steps:
+  - intent: ask_basic_subject
+  - action: utter_ask_basic_subject
+
+## ask_elective_subject
+- rule: ask_elective_subject
+  steps:
+  - intent: ask_elective_subject
+  - action: utter_ask_elective_subject
+
+## ask_major
+- rule: ask_major
+  steps:
+  - intent: ask_major
+  - action: utter_ask_major
+
+## ask_data_technology
+- rule: ask_data_technology
+  steps:
+  - intent: ask_data_technology
+  - action: utter_ask_data_technology
+
+## ask_software_technology
+- rule: ask_software_technology
+  steps:
+  - intent: ask_software_technology
+  - action: utter_ask_software_technology
+
+## ask_network_security
+- rule: ask_network_security
+  steps:
+  - intent: ask_network_security
+  - action: utter_ask_network_security
+
+## ask_information_system
+- rule: ask_information_system
+  steps:
+  - intent: ask_information_system
+  - action: utter_ask_information_system
+
+## ask_data_subject
+- rule: ask_data_subject
+  steps:
+  - intent: ask_data_subject
+  - action: utter_ask_data_subject
+
+## ask_software_subject
+- rule: ask_software_subject
+  steps:
+  - intent: ask_software_subject
+  - action: utter_ask_software_subject
+
+## ask_network_subject
+- rule: ask_network_subject
+  steps:
+  - intent: ask_network_subject
+  - action: utter_ask_network_subject
+
+## ask_system_subject
+- rule: ask_system_subject
+  steps:
+  - intent: ask_system_subject
+  - action: utter_ask_system_subject
+
+## out_of_scope  
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  
+## nlu_fallback
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
